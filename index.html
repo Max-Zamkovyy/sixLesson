@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Завдання №1
+
+        function getResult(num1, num2, sign){
+            if(sign==='+'){
+                return num1+num2;
+            }else if(sign==='-'){
+                return num1-num2;
+            } else if(sign==='*'){
+                return num1*num2;
+            }else if(sign==='/'){
+                return num1/num2;
+            }else if(sign==='**'){
+                return num1**num2;
+            }else{
+                return 'Ця дія неможлива!';
+            }
+            }
+
+        let resultOne = getResult(5, 5, '+');
+        console.log(resultOne);
+
+
+
+        // Завдання №2
+
+        function isCharPresent(string, symbol, numSymbol){
+            for(var i = numSymbol; i<string.length; i++){
+                if(string[i]===symbol){
+                    return true;
+                }
+                }return false;
+            }
+        let resultTwo = isCharPresent('Maxipus', 'p', 2);
+        console.log(resultTwo);
+
+
+        // Завдання №3
+
+
+        function charIndexOf (stringOne, symbolOne, numSymbolOne){
+            for(var i = numSymbolOne; i<stringOne.length; i++){
+                if(stringOne[i]===symbolOne){
+                    return i;
+                }
+                }return '-1';
+            }
+        let resultThree = charIndexOf('Maxipus', 'x', 4);
+        console.log(resultThree);
+
+    </script>
+</body>
+</html>
